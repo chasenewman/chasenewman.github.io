@@ -1,0 +1,189 @@
+body {
+    background: #000;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: "Suez One", serif;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 0.9;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: "Suez One", serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: "Suez One", serif;
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+h3 span.sub {
+    font-family: "Quicksand", sans-serif;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+h4 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+h5 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #fff;
+    margin: 40px auto;
+    opacity: 1;
+}
+
+section.intro {
+    padding: 5% 0 0;
+}
+
+.bttn {
+    background-color: #000;
+    border: 3px solid #000;
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    margin: 10px 0;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+.bttn:focus, .bttn:hover {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+div.modal {
+    color: #000;
+    text-align: center;
+}
+div.modal div.modal-header {
+    background: rgba(0,0,0,0.1);
+    display: block;
+}
+div.modal div.modal-header .title-close {
+    display: flex;
+    margin-bottom: 20px;
+}
+div.modal div.modal-header .title-close h3 {
+    margin: 0 auto;
+}
+div.modal div.modal-header .title-close .btn-close {
+    margin: 0;
+}
+div.modal .carousel-control-buttons .carousel-control {
+    display: inline-block;
+    margin: 0 15px;
+    opacity: 1;
+    position: static;
+    width: auto;
+    transition: 0.2s ease all;
+}
+div.modal .carousel-control-buttons .carousel-control:hover, div.modal .carousel-control-buttons .carousel-control:focus {
+    opacity: 0.6;
+}
+div.modal .carousel-control-buttons .carousel-control i {
+    color: #000;
+    font-size: 30px;
+}
+
+a.modal-link {
+    align-items: center;
+    border: 4px solid #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+a.modal-link img {
+    transition: 0.2s ease all;
+}
+a.modal-link::after {
+    color: #fff;
+    content: "CLICK TO VIEW";
+    display: block;
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    max-width: 150px;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+a.modal-link:hover img, a.modal-link:focus img {
+    opacity: 0.25;
+}
+a.modal-link:hover::after, a.modal-link:focus::after {
+    opacity: 1;
+}
+
+footer {
+    padding: 3% 15px 30px;
+    text-align: center;
+}
+footer p {
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    h3 span.sub {
+        font-size: 20px;
+    }
+    
+    h4 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    
+    h5 {
+        font-size: 22px;
+    }
+}
